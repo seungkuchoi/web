@@ -16,13 +16,17 @@
                 font-size: 25px;
             }
             .biography {
-                display: grid;
                 max-width: 90%;
                 margin: 0 auto;
                 grid-template-columns: 60% 40%;
                 grid-gap: 5px;
             }
-            @media screen and (max-width: 930px) {
+            @media screen and (min-width: 769px) {
+                .biography {
+                    display: grid;
+                }
+            }
+            @media screen and (max-width: 768px) {
                 .biography {
                     display: block;
                 }
@@ -239,7 +243,7 @@
     </body>
     <foot>
         <div class="footer">
-            <p><q>"Have the courage to follow your heart and intuition. They somehow know what you truly want to become."</q><br>-STEVE JOBS</p>
+            <p><q>Have the courage to follow your heart and intuition. They somehow know what you truly want to become.</q><br>-STEVE JOBS</p>
             <p>Do read more about this impeccable personality <a href="https://en.wikipedia.org/wiki/Steve_Jobs">here.</a></p>
         </div>
     </foot>
