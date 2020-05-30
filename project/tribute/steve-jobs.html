@@ -2,175 +2,238 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Dosis|Lato|Oswald|Pacifico|Roboto" rel="stylesheet">
         <style>
-            img {
-                width: 100%;
+            .cover {
+                max-width: 90%;
+                margin: 0 auto;
+                display: block;
             }
-            .inlineblock {
-                display: inline-block;
-                border: 1px solid black;
-                vertical-align: top;
-                font-size: 1rem;
+            .quote {
+                text-align: center;
+                font-family: 'Pacifico', cursive;
+                padding: 12px;
+                font-size: 25px;
             }
-            td.description {
-                width: 300px;
+            .biography {
+                display: grid;
+                max-width: 90%;
+                margin: 0 auto;
+                grid-template-columns: 60% 40%;
+                grid-gap: 5px;
+            }
+            @media screen and (max-width: 930px) {
+                .biography {
+                    display: block;
+                }
+            }
+            .timeline-caption {
+                text-align: center;
+                margin: 0 auto;
+                font-size: 50px;
+                line-height: 120px;
+                font-weight: bold;
+                color: #ececec;
+            }
+            .timeline tbody td:first-child {
+                max-width: 100%;
+                white-space: nowrap;
+                background-color: white;
+                text-align: center;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 26px;
+            }
+            .timeline tbody td {
+                background-color: #f9f9f9;
+                border-top: 1px solid #ccc;
+                font-size: 14px;
+                padding: 8px;
+            }
+            .nutshell {
+                margin: 0 auto;
+            }
+            .nutshell-caption {
+                text-align: center;
+                margin: 0 auto;
+                font-size: 26px;
+                font-weight: bold;
+            }
+            .nutshell-cover {
+                max-width: 50%;
+                margin: 0 auto;
+                display: block;
+            }
+            .nutshell tbody td:first-child {
+                max-width:100%;
+                white-space: nowrap;
+                text-align: center;
+                font-weight: bold;
+                font-size: 90%;
+            }
+            .nutshell tbody td {
+                padding: 0.2em;
+                border-top: 1px solid #dddddd;
+                font-size: 90%;
+                text-align: center;
             }
             .footer {
                 background-color: #ececec;
+                max-width: 90%;
+                margin: 0 auto;
+                font-family: 'Pacifico', cursive;
+                text-align: center;
+                font-size: 24px;
             }
         </style>
     </head>
     <body>
-        <div>
-            <img src="http://www.hdwallpapers.in/walls/steve_jobs-wide.jpg"/>
-        </div>
-        <div>
-            <p>The people who are crazy enough to think they can change the world are the ones who do.</p>
-        </div>
-        <div class="biography">
-            <div class="inlineblock">
-                <table>
-                    <caption>TIMELINE</caption>
-                    <colgroup>
-                        <col>
-                        <col>
-                    </colgroup>
-                    <thead>
-                        <tr>
-                            <th>year</th>
-                            <th>description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>24 Feb 1955</td>
-                            <td class="description">Steven Paul was born in San Francisco, the son of Abdulfattah Jandali and Joanne Schieble. He is quickly adopted by Paul and Clara Jobs</td>
-                        </tr>
-                        <tr>
-                            <td>1969</td>
-                            <td class="description">Steve Jobs meets Steve Wozniak, 5 years older, through a mutual friend. Woz and Steve share a love of electronics, Bob Dylan, and pranks</td>
-                        </tr>
-                        <tr>
-                            <td>Mar 1976</td>
-                            <td class="description">Woz and Steve show the early Apple I board at the Homebrew Computer Club</td>
-                        </tr>
-                        <tr>
-                            <td>28 Aug 1976</td>
-                            <td class="description">Steve Jobs and Woz show off the Apple I at the Personal Computing Festival in Atlantic City, with help from Dan Kottke</td>
-                        </tr>
-                        <tr>
-                            <td>1978</td>
-                            <td class="description">At Apple, work starts on the Apple III and the Lisa, while Jef Raskin begins The Book of Macintosh</td>
-                        </tr>
-                        <tr>
-                            <td>May 1980</td>
-                            <td class="description">Apple launches the Apple III, which will prove a disastrous flop</td>
-                        </tr>
-                        <tr>
-                            <td>Jan 1983</td>
-                            <td class="description">Launch of the Lisa computer. The Lisa team later merges with the Mac team under Steve Jobs's leadership</td>
-                        </tr>
-                        <tr>
-                            <td>8 Apr 1983</td>
-                            <td class="description">PepsiCo CEO John Sculley becomes Apple's CEO after having been wooed by Steve Jobs for several months</td>
-                        </tr>
-                        <tr>
-                            <td>17 Sep 1985</td>
-                            <td class="description">Steve Jobs resigns from Apple and starts NeXT with five other refugees from Apple. Apple announces it will sue NeXT</td>
-                        </tr>
-                        <tr>
-                            <td>Dec 1996</td>
-                            <td class="description">Apple, which was desperately looking for a modern operating system to buy, eventually buys NeXT for $400 million. Steve Jobs is named "informal adviser" to Apple CEO Gil Amelio</td>
-                        </tr>
-                        <tr>
-                            <td>6 May 1998</td>
-                            <td class="description">Steve Jobs introduces Apple's revolutionary iMac at the Flint Center auditorium in Cupertino, 14 years after he had introduced the Macintosh at that same place</td>
-                        </tr>
-                        <tr>
-                            <td>5 Oct 1999</td>
-                            <td class="description">Introduction of the iMac DVs and of iMovie, the first of Apple's first Digital Hub app</td>
-                        </tr>
-                        <tr>
-                            <td>28 Apr 2003</td>
-                            <td class="description">Apple opens the revolutionary online iTunes Music Store in the US, after negotiating landmark deals with all major music labels</td>
-                        </tr>
-                        <tr>
-                            <td>15 Jan 2008</td>
-                            <td class="description">At Macworld 2008, Steve Jobs introduces MacBook Air, with the tagline 'the world's thinnest notebook'. Three years later, it will come to redefine all of Apple's notebook product line</td>
-                        </tr>
-                        <tr>
-                            <td>24 Aug 2011</td>
-                            <td class="description">Steve Jobs resigns as CEO of Apple, with the words 'I have always said if there ever came a day when I could no longer meet my duties and expectations as Apple's CEO, I would be the first to let you know. Unfortunately, that day has come.' Tim Cook becomes Apple CEO</td>
-                        </tr>
-                        <tr>
-                            <td>5 Oct 2011</td>
-                            <td class="description">Steve Jobs dies at home, surrounded by his family</td>
-                        </tr>
-                    </tbody>
-                </table>
+        <div class="container">
+            <div>
+                <img class="cover" src="http://www.hdwallpapers.in/walls/steve_jobs-wide.jpg">
+                <p class="quote">The people who are crazy enough to think they can change the world are the ones who do.</p>
             </div>
-            <div class="inlineblock">
-                <p>IN A NUTSHELL</p>
-                <img src="Aristotle_Onassis.jpg" style="width: 100px;">
-                <table>
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Born</td>
-                            <td>
-                                Steven Paul Jobs<br>
-                                February 24, 1955<br>
-                                San Francisco, California, U.S.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Died</td>
-                            <td>
-                                October 5, 2011 (aged 56)<br>Palo Alto, California, U.S.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Occupation</td>
-                            <td>
-                                Co-founder, Chairman, and CEO of Apple Inc.<br>
-                                Primary investor and CEO of Pixar<br>
-                                Founder and CEO of NeXT<br>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Parents</td>
-                            <td>
-                                Paul Jobs (adoptive father)<br>
-                                Clara Jobs (adoptive mother)<br>
-                                Abdulfattah Jandali (biological father)<br>
-                                Joanne Schieble Simpson (biological mother)
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Children</td>
-                            <td>
-                                with Brennan;<br>
-                                Lisa Brennan (b. 1978)<br>
-                                with Powell;<br>
-                                Reed Jobs (b. 1991)<br>
-                                Erin Jobs (b. 1995)<br>
-                                Eve Jobs (b. 1998)
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Cause of death</td>
-                            <td>
-                                Pancreatic cancer and<br>
-                                respiratory arrest
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <p class="timeline-caption">TIME LINE</p>
+            <div class="biography">
+                <div>
+                    <table class="timeline">
+                        <colgroup>
+                            <col>
+                            <col>
+                        </colgroup>
+                        <thead>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>24 Feb 1955</td>
+                                <td class="description">Steven Paul was born in San Francisco, the son of Abdulfattah Jandali and Joanne Schieble. He is quickly adopted by Paul and Clara Jobs</td>
+                            </tr>
+                            <tr>
+                                <td>1969</td>
+                                <td class="description">Steve Jobs meets Steve Wozniak, 5 years older, through a mutual friend. Woz and Steve share a love of electronics, Bob Dylan, and pranks</td>
+                            </tr>
+                            <tr>
+                                <td>Mar 1976</td>
+                                <td class="description">Woz and Steve show the early Apple I board at the Homebrew Computer Club</td>
+                            </tr>
+                            <tr>
+                                <td>28 Aug 1976</td>
+                                <td class="description">Steve Jobs and Woz show off the Apple I at the Personal Computing Festival in Atlantic City, with help from Dan Kottke</td>
+                            </tr>
+                            <tr>
+                                <td>1978</td>
+                                <td class="description">At Apple, work starts on the Apple III and the Lisa, while Jef Raskin begins The Book of Macintosh</td>
+                            </tr>
+                            <tr>
+                                <td>May 1980</td>
+                                <td class="description">Apple launches the Apple III, which will prove a disastrous flop</td>
+                            </tr>
+                            <tr>
+                                <td>Jan 1983</td>
+                                <td class="description">Launch of the Lisa computer. The Lisa team later merges with the Mac team under Steve Jobs's leadership</td>
+                            </tr>
+                            <tr>
+                                <td>8 Apr 1983</td>
+                                <td class="description">PepsiCo CEO John Sculley becomes Apple's CEO after having been wooed by Steve Jobs for several months</td>
+                            </tr>
+                            <tr>
+                                <td>17 Sep 1985</td>
+                                <td class="description">Steve Jobs resigns from Apple and starts NeXT with five other refugees from Apple. Apple announces it will sue NeXT</td>
+                            </tr>
+                            <tr>
+                                <td>Dec 1996</td>
+                                <td class="description">Apple, which was desperately looking for a modern operating system to buy, eventually buys NeXT for $400 million. Steve Jobs is named "informal adviser" to Apple CEO Gil Amelio</td>
+                            </tr>
+                            <tr>
+                                <td>6 May 1998</td>
+                                <td class="description">Steve Jobs introduces Apple's revolutionary iMac at the Flint Center auditorium in Cupertino, 14 years after he had introduced the Macintosh at that same place</td>
+                            </tr>
+                            <tr>
+                                <td>5 Oct 1999</td>
+                                <td class="description">Introduction of the iMac DVs and of iMovie, the first of Apple's first Digital Hub app</td>
+                            </tr>
+                            <tr>
+                                <td>28 Apr 2003</td>
+                                <td class="description">Apple opens the revolutionary online iTunes Music Store in the US, after negotiating landmark deals with all major music labels</td>
+                            </tr>
+                            <tr>
+                                <td>15 Jan 2008</td>
+                                <td class="description">At Macworld 2008, Steve Jobs introduces MacBook Air, with the tagline 'the world's thinnest notebook'. Three years later, it will come to redefine all of Apple's notebook product line</td>
+                            </tr>
+                            <tr>
+                                <td>24 Aug 2011</td>
+                                <td class="description">Steve Jobs resigns as CEO of Apple, with the words 'I have always said if there ever came a day when I could no longer meet my duties and expectations as Apple's CEO, I would be the first to let you know. Unfortunately, that day has come.' Tim Cook becomes Apple CEO</td>
+                            </tr>
+                            <tr>
+                                <td>5 Oct 2011</td>
+                                <td class="description">Steve Jobs dies at home, surrounded by his family</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <p class="nutshell-caption">IN A NUTSHELL</p>
+                    <img class="nutshell-cover" src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Steve_Jobs_Headshot_2010-CROP_%28cropped_2%29.jpg">
+                    <table class="nutshell">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Born</td>
+                                <td>
+                                    Steven Paul Jobs<br>
+                                    February 24, 1955<br>
+                                    San Francisco, California, U.S.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Died</td>
+                                <td>
+                                    October 5, 2011 (aged 56)<br>Palo Alto, California, U.S.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Occupation</td>
+                                <td>
+                                    Co-founder, Chairman, and CEO of Apple Inc.<br>
+                                    Primary investor and CEO of Pixar<br>
+                                    Founder and CEO of NeXT<br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Parents</td>
+                                <td>
+                                    Paul Jobs (adoptive father)<br>
+                                    Clara Jobs (adoptive mother)<br>
+                                    Abdulfattah Jandali (biological father)<br>
+                                    Joanne Schieble Simpson (biological mother)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Children</td>
+                                <td>
+                                    with Brennan;<br>
+                                    Lisa Brennan (b. 1978)<br>
+                                    with Powell;<br>
+                                    Reed Jobs (b. 1991)<br>
+                                    Erin Jobs (b. 1995)<br>
+                                    Eve Jobs (b. 1998)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Cause of death</td>
+                                <td>
+                                    Pancreatic cancer and<br>
+                                    respiratory arrest
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </body>
